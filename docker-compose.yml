@@ -1,0 +1,11 @@
+version: '3'
+
+services:
+  test_drive:
+    image: test-2
+    volumes:
+    - .:/dummyapp 
+    working_dir: /dummyapp
+    command: "./run_test_drive.sh"
+    ports:
+    - '8000:8000'

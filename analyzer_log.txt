@@ -1,0 +1,31 @@
+Analyzing dummyapp...                                           
+
+   info • Only use double quotes for strings containing single quotes • integration_test/app_test.dart:13:41 • prefer_single_quotes
+   info • Use 'const' with the constructor to improve performance • integration_test/app_test.dart:16:42 • prefer_const_constructors
+   info • Use 'const' with the constructor to improve performance • integration_test/app_test.dart:23:27 • prefer_const_constructors
+   info • Use 'const' with the constructor to improve performance • integration_test/app_test.dart:25:24 • prefer_const_constructors
+   info • Use 'const' with the constructor to improve performance • integration_test/app_test.dart:26:27 • prefer_const_constructors
+   info • Use 'const' with the constructor to improve performance • integration_test/app_test.dart:28:27 • prefer_const_constructors
+   info • Use 'const' with the constructor to improve performance • integration_test/app_test.dart:30:32 • prefer_const_constructors
+   info • Use 'const' with the constructor to improve performance • integration_test/app_test.dart:46:28 • prefer_const_constructors
+   info • Don't invoke 'print' in production code • integration_test/app_test.dart:52:7 • avoid_print
+   info • Only use double quotes for strings containing single quotes • integration_test/app_test.dart:52:13 • prefer_single_quotes
+   info • Use 'const' with the constructor to improve performance • integration_test/app_test.dart:53:32 • prefer_const_constructors
+   info • Only use double quotes for strings containing single quotes • integration_test/app_test.dart:59:12 • prefer_single_quotes
+   info • Only use double quotes for strings containing single quotes • integration_test/app_test.dart:59:40 • prefer_single_quotes
+   info • Don't invoke 'print' in production code • integration_test/app_test.dart:61:5 • avoid_print
+   info • Only use double quotes for strings containing single quotes • integration_test/app_test.dart:61:11 • prefer_single_quotes
+   info • Use 'const' with the constructor to improve performance • integration_test/app_test.dart:70:28 • prefer_const_constructors
+   info • Don't invoke 'print' in production code • integration_test/app_test.dart:76:7 • avoid_print
+   info • Only use double quotes for strings containing single quotes • integration_test/app_test.dart:76:13 • prefer_single_quotes
+   info • Use 'const' with the constructor to improve performance • integration_test/app_test.dart:77:32 • prefer_const_constructors
+   info • Only use double quotes for strings containing single quotes • integration_test/app_test.dart:83:12 • prefer_single_quotes
+   info • Only use double quotes for strings containing single quotes • integration_test/app_test.dart:83:40 • prefer_single_quotes
+   info • Don't invoke 'print' in production code • integration_test/app_test.dart:85:5 • avoid_print
+   info • Only use double quotes for strings containing single quotes • integration_test/app_test.dart:85:11 • prefer_single_quotes
+   info • Use 'const' with the constructor to improve performance • lib/main.dart:59:13 • prefer_const_constructors
+   info • Don't invoke 'print' in production code • lib/main.dart:66:17 • avoid_print
+   info • Only use double quotes for strings containing single quotes • lib/main.dart:66:23 • prefer_single_quotes
+   info • Use 'const' with the constructor to improve performance • lib/main.dart:79:32 • prefer_const_constructors
+
+27 issues found. (ran in 1.3s)
