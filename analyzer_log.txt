@@ -28,4 +28,4 @@ Analyzing dummyapp...
    info • Only use double quotes for strings containing single quotes • lib/main.dart:66:23 • prefer_single_quotes
    info • Use 'const' with the constructor to improve performance • lib/main.dart:79:32 • prefer_const_constructors
 
-27 issues found. (ran in 1.3s)
+27 issues found. (ran in 1.2s)

@@ -10,18 +10,18 @@ flutter --version
 # Run Flutter commands
 flutter doctor
 flutter pub get
-# flutter analyze 2>&1 | tee analyzer_log.txt
-# sleep 10
-# python3 generateNewReport.py
-# # Check if analyzer_log.txt contains any issues
-# if grep -q "issues found" analyzer_log.txt; then
-#   echo "Issues found. Stopping the process."
-#   # Kill the ChromeDriver process
-#   kill $CHROMEDRIVER_PID
-#   exit 1
-# else
-#   echo "No issues found. Continuing the process."
-# fi
+flutter analyze 2>&1 | tee analyzer_log.txt
+sleep 10
+python3 generateNewReport.py
+# Check if analyzer_log.txt contains any issues
+if grep -q "issues found" analyzer_log.txt; then
+  echo "Issues found. Stopping the process."
+  # Kill the ChromeDriver process
+  kill $CHROMEDRIVER_PID
+  exit 1
+else
+  echo "No issues found. Continuing the process."
+fi
 
 # Output versions of Chrome and ChromeDriver
 google-chrome --version

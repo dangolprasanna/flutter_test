@@ -1,7 +1,22 @@
-<h1 style="text-align:center">Quality Gate Report</h1><style>table { width: 100%; border-collapse: collapse; }th, td { padding: 8px; text-align: left; }tr:hover{ background-color: #e3e3e3}.message, .path, .prefix, .numbering{ background-color: lightgray; }.issues { color: red; }</style><table border="1">
+<!DOCTYPE html>
+<html>
+<head>
+<title>Quality Gate Report</title>
+<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.25/css/jquery.dataTables.css">
+<style>
+body { font-family: Arial, sans-serif; }
+th, td { padding: 8px; text-align: left; }
+th { background-color: #f2f2f2; }
+tr:hover { background-color: #f5f5f5; }
+.issues { color: red; font-weight: bold; }
+</style>
+</head>
+<body>
+<h1 style="text-align:center">Quality Gate Report</h1>
+<table id="dataTable" border="1">
 <h4 class="issues" style="text-align: center">27 issues found</h4>
-<tr><th class="numbering">No.</th><th class="message">Message</th><th class="path">Path</th><th class="prefix">Rule</th></tr>
-<tr><td>1</td><td>Only use double quotes for strings containing single quotes</td><td>integration_test/app_test.dart:13:41</td><td>prefer_single_quotes</td></tr>
+<thead><tr><th class="numbering">No.</th><th class="message">Message</th><th class="path">Path</th><th class="prefix">Rule</th></tr></thead>
+<tbody><tr><td>1</td><td>Only use double quotes for strings containing single quotes</td><td>integration_test/app_test.dart:13:41</td><td>prefer_single_quotes</td></tr>
 <tr><td>2</td><td>Use 'const' with the constructor to improve performance</td><td>integration_test/app_test.dart:16:42</td><td>prefer_const_constructors</td></tr>
 <tr><td>3</td><td>Use 'const' with the constructor to improve performance</td><td>integration_test/app_test.dart:23:27</td><td>prefer_const_constructors</td></tr>
 <tr><td>4</td><td>Use 'const' with the constructor to improve performance</td><td>integration_test/app_test.dart:25:24</td><td>prefer_const_constructors</td></tr>
@@ -28,4 +43,12 @@
 <tr><td>25</td><td>Don't invoke 'print' in production code</td><td>lib/main.dart:66:17</td><td>avoid_print</td></tr>
 <tr><td>26</td><td>Only use double quotes for strings containing single quotes</td><td>lib/main.dart:66:23</td><td>prefer_single_quotes</td></tr>
 <tr><td>27</td><td>Use 'const' with the constructor to improve performance</td><td>lib/main.dart:79:32</td><td>prefer_const_constructors</td></tr>
-</table>
+</tbody></table><script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.datatables.net/1.10.25/js/jquery.dataTables.min.js"></script>
+<script>
+$(document).ready(function() {
+    $("#dataTable").DataTable();
+});
+</script>
+</body>
+</html>
